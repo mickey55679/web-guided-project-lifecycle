@@ -42,7 +42,7 @@ searchDogs = dogName => {
     this.setState({doggos: res.data.message, breed: dogName});
   })
 }
-
+// could do componentWillUnmount() this can be used to get rid of any suscriptions
   render() {
     console.log("render function ran");
 
